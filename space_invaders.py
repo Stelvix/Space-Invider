@@ -125,6 +125,13 @@ def move_top():
         player.sety(y + 30)  # j'augmente la vitesse vers la gauche
 
 
+def move_down():
+    y = player.ycor()
+    if y > BOTTOM + 10:
+        player.sety(y - 30)
+        print(player.ycor())  # j'augmente la vitesse vers la gauche
+
+
 def move_right():
     x = player.xcor()
     if x < RIGHT - 10:
@@ -136,6 +143,7 @@ window.listen()
 window.onkeypress(move_left, "Left")
 window.onkeypress(move_right, "Right")
 window.onkeypress(move_top, "Up")
+window.onkeypress(move_down, "Down")
 window.onkeypress(create_laser, "space")
 
 # Boucle de jeu

@@ -29,7 +29,7 @@ Le joueur contrôle un vaisseau, tire des lasers, élimine des ennemis et tente 
 
 ## Technologies utilisées
 
-- **Python 3.x**
+- **Python 3.13**
 - **Turtle**
 - **Pygame**
 - **Random**
